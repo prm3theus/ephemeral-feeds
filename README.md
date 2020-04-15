@@ -1,6 +1,8 @@
 # ephemeral-feeds (efeeds)
 
-ephemeral multifeed based hypercore that performs a union on old feeds after time expiry
+ephemeral multifeed based hypercore that performs a union on old feeds after time expiry.
+
+Requires: a central root process to prune leaf feeds on a swarm.
 
 ## API (wip)
 ```
