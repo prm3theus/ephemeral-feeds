@@ -2,6 +2,7 @@
 
 ephemeral multifeed based hypercore that performs a union on old feeds after time expiry
 
+## API (wip)
 ```
 const eFeed = EphemeralFeed(hypercore, {expiration: 86400000 }) # expires in 24 hours
 
@@ -9,6 +10,7 @@ eFeed.join(discoveryKey) # key of root reconciler
 
 eFeed.replicate(multifeed, eFeed)
 
+multifeed.prune(eFeed)
 ```
 
 ## uses
