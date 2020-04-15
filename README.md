@@ -29,7 +29,7 @@ multifeed.prune(eFeed)
 - current arch of multifeed: master list of keys of feeds + all data from those feeds
 - feeds must have a `expiration` timestamp in constructor
 - possibly some hiearchy of pubkey accessibilty (e.g. bls?) where master can't write to feeds, but has access to delete & copy
-- could have a feature to perform a reduce / map / filter duing reconcillation process, whereby data becomes truncated
+- could have a feature to perform a reduce / map / filter duing reconcillation process, whereby data becomes truncated e.g. something like: https://github.com/kappa-db/kappa-view-kv
 - could store feed of data on IPFS or seperate swarm, then have entry of where to find data
 - if root reconciler is down, consider distributed alternatives / max capacity of feeds for optimal resiliency
 
