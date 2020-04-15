@@ -15,8 +15,8 @@ eFeed.replicate(multifeed, eFeed)
 multifeed.prune(eFeed)
 ```
 ## tradeoffs
-- point centralization over distributed and resillient (can be smoothed with multiple root processes)
-- opens up feed / swarm to spamming and clogging other important replication
+- point of centralization vs. distributed & resillient apps (can be smoothed with multiple root processes)
+- opens up feed / swarm to spamming and clogging other important app processing
 - longer lag time between 'up-to-date' version of feeds due to increased processing time to prune/replicate
 - to boost load speed of application, consider max # of feeds vs. time for expiration
 
@@ -34,6 +34,7 @@ multifeed.prune(eFeed)
 - if root reconciler is down, consider distributed alternatives / max capacity of feeds for optimal resiliency
 
 ## tests
+- [ ] what does ddos look like? e.g. programmatic web crawling
 - [ ] leaf node implementation (client side)
 - [ ] root node implementation (server / reconciler)
 - [ ] simple working leaf + root = ephemeral feed
